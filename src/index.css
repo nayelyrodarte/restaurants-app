@@ -33,10 +33,11 @@ header {
 }
 
 table {
-  position: relative;
+  border-radius: 10px;
   margin: auto;
   margin-top: 2em;
-  border-radius: 10px;
+  position: relative;
+  padding: 0.5em 1em;
 }
 
 th {
