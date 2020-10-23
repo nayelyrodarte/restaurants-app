@@ -5,12 +5,18 @@ function Table(data) {
 
   const displayRestaurants = sortData.map((restaurant) => (
     <tr key={restaurant.id}>
-      <td>{restaurant.name}</td>
       <td>
-        {restaurant.address.street} <br /> {restaurant.address.city}
+        <div className='item__header'>
+          <p>{restaurant.name}</p>
+          <p>{restaurant.address.street} </p>
+          <p> {restaurant.address.city} </p>
+          <p> {restaurant.contact.phone}</p>
+          <p> {restaurant.contact.site}</p>
+        </div>
       </td>
-      <td>{restaurant.rating}</td>
-      <button>Ver más</button>
+      <td>
+        <div className='rating'>{restaurant.rating}</div>
+      </td>
     </tr>
   ));
 
@@ -31,11 +37,9 @@ function Table(data) {
             <th>
               <button onClick={() => sort('name')}>Sort</button>Restaurante
             </th>
-            <th>Dirección</th>
             <th>
               <button onClick={() => sort('rating')}>Sort</button>Rating
             </th>
-            <th></th>
           </tr>
         </thead>
         <tbody>{displayRestaurants}</tbody>
