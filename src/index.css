@@ -89,6 +89,7 @@ img {
 }
 
 .charging__message {
+  margin: 3em;
   color: white;
 }
 
