@@ -19,6 +19,15 @@ function Table(data) {
             {' '}
             <p> {restaurant.contact.phone}</p>
             <p> {restaurant.contact.site}</p>
+            <div
+              class='fb-like'
+              data-href='#'
+              data-width='1em'
+              data-layout='standard'
+              data-action='like'
+              data-size='small'
+              data-share='true'
+            ></div>
           </div>
         </div>
       </td>
