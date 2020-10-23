@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/restaurants-app/static/css/main.5e4bb2da.chunk.css",
-    "main.js": "/restaurants-app/static/js/main.df7f07a3.chunk.js",
-    "main.js.map": "/restaurants-app/static/js/main.df7f07a3.chunk.js.map",
+    "main.css": "/restaurants-app/static/css/main.b67d5917.chunk.css",
+    "main.js": "/restaurants-app/static/js/main.0457586c.chunk.js",
+    "main.js.map": "/restaurants-app/static/js/main.0457586c.chunk.js.map",
     "runtime-main.js": "/restaurants-app/static/js/runtime-main.40580136.js",
     "runtime-main.js.map": "/restaurants-app/static/js/runtime-main.40580136.js.map",
-    "static/js/2.dcc948ff.chunk.js": "/restaurants-app/static/js/2.dcc948ff.chunk.js",
-    "static/js/2.dcc948ff.chunk.js.map": "/restaurants-app/static/js/2.dcc948ff.chunk.js.map",
+    "static/js/2.6518d3ff.chunk.js": "/restaurants-app/static/js/2.6518d3ff.chunk.js",
+    "static/js/2.6518d3ff.chunk.js.map": "/restaurants-app/static/js/2.6518d3ff.chunk.js.map",
     "index.html": "/restaurants-app/index.html",
-    "precache-manifest.9d3edc74ced656f4c20647dd745d6ff4.js": "/restaurants-app/precache-manifest.9d3edc74ced656f4c20647dd745d6ff4.js",
+    "precache-manifest.078188ca55d89bdf99004fcb202083f1.js": "/restaurants-app/precache-manifest.078188ca55d89bdf99004fcb202083f1.js",
     "service-worker.js": "/restaurants-app/service-worker.js",
-    "static/css/main.5e4bb2da.chunk.css.map": "/restaurants-app/static/css/main.5e4bb2da.chunk.css.map",
-    "static/js/2.dcc948ff.chunk.js.LICENSE.txt": "/restaurants-app/static/js/2.dcc948ff.chunk.js.LICENSE.txt",
-    "static/media/alphabetical-order.svg": "/restaurants-app/static/media/alphabetical-order.6c979a7e.svg"
+    "static/css/main.b67d5917.chunk.css.map": "/restaurants-app/static/css/main.b67d5917.chunk.css.map",
+    "static/js/2.6518d3ff.chunk.js.LICENSE.txt": "/restaurants-app/static/js/2.6518d3ff.chunk.js.LICENSE.txt",
+    "static/media/alphabetical-order.svg": "/restaurants-app/static/media/alphabetical-order.6c979a7e.svg",
+    "static/media/chevron-up.svg": "/restaurants-app/static/media/chevron-up.9b049091.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.40580136.js",
-    "static/js/2.dcc948ff.chunk.js",
-    "static/css/main.5e4bb2da.chunk.css",
-    "static/js/main.df7f07a3.chunk.js"
+    "static/js/2.6518d3ff.chunk.js",
+    "static/css/main.b67d5917.chunk.css",
+    "static/js/main.0457586c.chunk.js"
   ]
 }
