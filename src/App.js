@@ -29,8 +29,8 @@ function App() {
         <h1>Melp</h1>
       </header>
       <div className='header__buttons'>
-        <button onClick={setView('list')}>Ver lista</button>
-        <button onClick={setView('map')}>Ver mapa</button>
+        <button onClick={() => setView('list')}>Ver lista</button>
+        <button onClick={() => setView('map')}>Ver mapa</button>
       </div>
       {loading ? (
         <p className='charging__message'>'Cargando...'</p>
