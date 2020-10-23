@@ -20,7 +20,7 @@ function Table(data) {
             <p> {restaurant.contact.phone}</p>
             <p> {restaurant.contact.site}</p>
             <div
-              class='fb-like'
+              className='fb-like'
               data-href='#'
               data-width='1em'
               data-layout='standard'
