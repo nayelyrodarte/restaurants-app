@@ -35,9 +35,9 @@ function App() {
       {loading ? (
         <p className='charging__message'>'Cargando...'</p>
       ) : view === 'list' ? (
-        <Table data={data} sortData={setData} />
+        <Table data={data} />
       ) : (
-        <MapContainer />
+        <MapContainer data={data} />
       )}
     </div>
   );
