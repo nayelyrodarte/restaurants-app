@@ -4,8 +4,8 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 const mapStyles = {
   margin: 'auto',
   marginTop: '2em',
-  maxWidth: '60%',
-  height: '80%',
+  maxWidth: '80%',
+  height: '50%',
 };
 
 export class MapContainer extends Component {
@@ -14,22 +14,29 @@ export class MapContainer extends Component {
 
     this.state = {
       locations: [],
+      customMarker: {},
     };
   }
   render() {
     console.log(this.props.data);
 
-    const getLocations = this.props.data.map(
-      (location) => location.address.location
-    );
+    const getAllLocations = this.props.data.map((location) => {
+      return location.address.location;
+    });
+
+    const addCustomMarker = (e) => {
+      return <Marker position={this.customMarker} />;
+    };
 
     return (
       <Map
         google={this.props.google}
         zoom={14}
         style={mapStyles}
-        initialCenter={getLocations[0]}
-      ></Map>
+        onClick={(e) => this.setState.customMarker(e.initialCenter)}
+      >
+        {addCustomMarker}
+      </Map>
     );
   }
 }
