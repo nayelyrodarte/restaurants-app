@@ -50,11 +50,16 @@ table {
   margin-bottom: 4em;
   position: relative;
   padding: 0.5em 1em;
-  width: 55%;
+  min-width: 50%;
+  max-width: 60%;
 }
 
 th {
   padding: 1em;
+}
+
+img {
+  width: 1em;
 }
 
 .cell__text {
@@ -86,7 +91,7 @@ th {
   }
 
   table {
-    width: 40%;
+    max-width: 40%;
   }
 
   .header__buttons {

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ascendingIcon from './ascending-sort.png';
+import alphabeticalIcon from './alphabetical-order.svg';
 
 function Table(data) {
   const [sortData, sortedData] = useState(data.data);
@@ -35,10 +37,20 @@ function Table(data) {
         <thead>
           <tr>
             <th>
-              <button onClick={() => sort('name')}>Sort</button>Restaurante
+              <button
+                onClick={() => {
+                  sort('name');
+                }}
+              >
+                <img src={alphabeticalIcon} alt='alphabetical-icon'></img>
+              </button>
+              Restaurante
             </th>
             <th>
-              <button onClick={() => sort('rating')}>Sort</button>Rating
+              <button onClick={() => sort('rating')}>
+                <img src={ascendingIcon} alt='ascending-icon'></img>
+              </button>
+              Rating
             </th>
           </tr>
         </thead>
