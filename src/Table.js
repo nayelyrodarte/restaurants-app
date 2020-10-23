@@ -6,7 +6,7 @@ function Table(data) {
   const displayRestaurants = sortData.map((restaurant) => (
     <tr key={restaurant.id}>
       <td>
-        <div className='item__header'>
+        <div className='cell__text'>
           <p>{restaurant.name}</p>
           <p>{restaurant.address.street} </p>
           <p> {restaurant.address.city} </p>
@@ -15,7 +15,7 @@ function Table(data) {
         </div>
       </td>
       <td>
-        <div className='rating'>{restaurant.rating}</div>
+        <div className='cell__rating'>{restaurant.rating}</div>
       </td>
     </tr>
   ));

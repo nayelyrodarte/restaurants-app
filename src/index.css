@@ -46,17 +46,17 @@ th {
   padding: 1em;
 }
 
-.item__header {
+.cell__text {
   display: grid;
   gap: 0.2em;
   margin: 0.5em;
 }
 
-.item__header p:first-child {
+.cell__text p:first-child {
   font-weight: bold;
 }
 
-.rating {
+.cell__rating {
   background-color: #eac946;
   margin: auto;
   width: 3em;
