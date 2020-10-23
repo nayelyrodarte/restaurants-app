@@ -31,11 +31,20 @@ function Table(data) {
   ));
 
   const sort = (key) => {
-    const sorted = data.data.sort((a, b) => {
-      if (a[key] < b[key]) return -1;
-      if (a[key] > b[key]) return 1;
-      return 0;
-    });
+    let sorted;
+    if (key === 'rating') {
+      sorted = data.data.sort((a, b) => {
+        if (a[key] > b[key]) return -1;
+        if (a[key] < b[key]) return 1;
+        return 0;
+      });
+    } else if (key === 'name') {
+      sorted = data.data.sort((a, b) => {
+        if (a[key] < b[key]) return -1;
+        if (a[key] > b[key]) return 1;
+        return 0;
+      });
+    }
     sortedData([...sorted]);
   };
 
@@ -45,11 +54,7 @@ function Table(data) {
         <thead>
           <tr>
             <th>
-              <button
-                onClick={() => {
-                  sort('name');
-                }}
-              >
+              <button onClick={() => sort('name')}>
                 <img src={alphabeticalIcon} alt='alphabetical-icon'></img>
               </button>
               Restaurante
