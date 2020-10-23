@@ -27,7 +27,15 @@ function App() {
       <header>
         <h1>Melp</h1>
       </header>
-      {loading ? 'Cargando...' : <Table data={data} sortData={setData} />}
+      <div className='header__buttons'>
+        <button>Ver lista</button>
+        <button>Ver mapa</button>
+      </div>
+      {loading ? (
+        <p className='charging__message'>'Cargando...'</p>
+      ) : (
+        <Table data={data} sortData={setData} />
+      )}
     </div>
   );
 }
