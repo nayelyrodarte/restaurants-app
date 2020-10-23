@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Table from './components/Table';
 import MapContainer from './components/MapContainer';
+import floatingArrowIcon from './img/chevron-up.svg';
 import './index.css';
 
 function App() {
@@ -25,9 +26,17 @@ function App() {
 
   return (
     <div className='App'>
+      <div
+        className='float'
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        <img src={floatingArrowIcon} alt='floating-arrow-icon' />
+      </div>
+
       <header>
         <h1>Melp</h1>
       </header>
+
       <div className='header__buttons'>
         <button onClick={() => setView('list')}>Ver lista</button>
         <button onClick={() => setView('map')}>Ver mapa</button>

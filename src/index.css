@@ -57,6 +57,7 @@ table {
   padding: 0.5em 1em;
   min-width: 50%;
   max-width: 60%;
+  z-index: 2;
 }
 
 th {
@@ -93,9 +94,35 @@ img {
   color: white;
 }
 
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #efefed;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 3;
+}
+
+.float img {
+  position: relative;
+  margin: 1em;
+  width: 1.1em;
+}
+
 @media screen and (max-width: 425px) {
   body {
     font-size: 0.8em;
+  }
+
+  .float {
+    right: 8px;
+    width: 40px;
+    height: 40px;
   }
 
   table {
