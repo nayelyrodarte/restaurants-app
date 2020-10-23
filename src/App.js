@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import Table from './Table';
-
-import './App.css';
+import Table from './components/Table';
+import './index.css';
 
 function App() {
   const [data, setData] = useState([]);

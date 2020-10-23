@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
-import ascendingIcon from './ascending-sort.png';
-import alphabeticalIcon from './alphabetical-order.svg';
+import ascendingIcon from '../img/ascending-sort.png';
+import alphabeticalIcon from '../img/alphabetical-order.svg';
 
 function Table(data) {
   const [sortData, sortedData] = useState(data.data);
 
   const displayRestaurants = sortData.map((restaurant) => (
-    <tr key={restaurant.id}>
+    <tr key={restaurant.id} className='row'>
       <td>
-        <div className='cell__text'>
-          <p>{restaurant.name}</p>
-          <p>{restaurant.address.street} </p>
-          <p> {restaurant.address.city} </p>
-          <p> {restaurant.contact.phone}</p>
-          <p> {restaurant.contact.site}</p>
+        <div className='row__text'>
+          <div className='row__header'>
+            {' '}
+            <p>{restaurant.name}</p>
+            <p>{restaurant.address.street} </p>
+            <p> {restaurant.address.city} </p>
+          </div>
+          <div>
+            {' '}
+            <p> {restaurant.contact.phone}</p>
+            <p> {restaurant.contact.site}</p>
+          </div>
         </div>
       </td>
       <td>
-        <div className='cell__rating'>{restaurant.rating}</div>
+        <div className='row__rating'>{restaurant.rating}</div>
       </td>
     </tr>
   ));

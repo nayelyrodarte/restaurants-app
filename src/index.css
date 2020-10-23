@@ -62,17 +62,19 @@ img {
   width: 1em;
 }
 
-.cell__text {
+.row__text {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   gap: 0.2em;
   margin: 0.5em;
 }
 
-.cell__text p:first-child {
+.row__header p:first-child {
   font-weight: bold;
 }
 
-.cell__rating {
+.row__rating {
   background-color: #eac946;
   margin: auto;
   width: 3em;
@@ -105,5 +107,9 @@ img {
   .header__buttons button {
     min-width: 55%;
     justify-self: center;
+  }
+
+  .row__text {
+    grid-template-columns: 100%;
   }
 }
