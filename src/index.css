@@ -24,6 +24,11 @@ td {
   border-bottom: 1px solid darkgray;
 }
 
+table button {
+  margin-right: 1em;
+  border: none;
+}
+
 header {
   color: #efefed;
   font-family: 'Pacifico';
