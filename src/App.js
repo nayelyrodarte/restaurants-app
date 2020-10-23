@@ -6,7 +6,6 @@ import Table from './Table';
 import './App.css';
 
 function App() {
-  const [sortBy, setSortBy] = useState('rating');
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState('false');
 
@@ -28,7 +27,7 @@ function App() {
       <header>
         <h1>Melp</h1>
       </header>
-      {loading ? 'Cargando...' : <Table data={data} />}
+      {loading ? 'Cargando...' : <Table data={data} sortData={setData} />}
     </div>
   );
 }
