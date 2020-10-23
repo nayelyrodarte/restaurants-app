@@ -13,6 +13,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
+    // added proxy vs cors blocking
     axios
       .get(
         'https://cors-anywhere.herokuapp.com/https://recruiting-datasets.s3.us-east-2.amazonaws.com/data_melp.json'

@@ -89,6 +89,12 @@ img {
   border-radius: 50%;
 }
 
+i {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  color: #515245;
+}
+
 .charging__message {
   margin: 3em;
   color: white;

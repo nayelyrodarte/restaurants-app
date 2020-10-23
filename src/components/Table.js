@@ -19,7 +19,8 @@ function Table(data) {
             {' '}
             <p> {restaurant.contact.phone}</p>
             <p> {restaurant.contact.site}</p>
-            <div></div>
+            <i class='fa fa-facebook-square fa-sm'></i>
+            <i class='fa fa-instagram'></i>
           </div>
         </div>
       </td>
